@@ -1,0 +1,36 @@
+Milestone 1 Resubmission - Smart Contract Development Evidence
+
+This resubmission provides the evidence listed in the Milestone 1 Evidence of Completion section:
+
+1. Detailed test results
+2. Technical report describing test scenarios
+3. Testnet deployment transaction evidence
+4. Preview/Preprod transaction IDs demonstrating functionality
+
+The submitted evidence demonstrates the core rolling-loan smart contract mechanism as an atomic refinancing flow. The tested transaction moves an active loan position from the Float Loan smart contract to the Leverage Loan smart contract in a single transaction.
+
+This flow follows the rolling-loan design:
+- create a new loan position
+- settle the existing loan position using the newly originated loan
+- redirect collateral from the existing loan into the new loan position
+- avoid a separate manual repayment, collateral withdrawal, and new loan opening process
+
+A. Detailed Test Results
+[Insert link to 01_Detailed_Test_Results_M1.pdf]
+
+B. Technical Report Describing Test Scenarios
+[Insert link to 02_Technical_Report_Test_Scenarios_M1.pdf]
+
+C. Testnet Deployment Transactions
+[Insert link to 03_Testnet_Deployment_Transactions_M1.pdf]
+
+D. Preview/Preprod Transaction IDs Demonstrating Functionality
+[Insert link to 04_Preview_Transaction_IDs_Functionality_Proof_M1.pdf]
+
+Primary execution transaction:
+https://preprod.cardanoscan.io/transaction/b09fa33a42fda235b28be38b58f1daab764e3dfb58768b9506a3c9d5ba5e851f
+
+Supporting demo video:
+https://www.youtube.com/watch?v=1eG3JKXwskM&t=9s
+
+The documents above map each test scenario to transaction evidence, smart contract deployment/reference transactions, UTxO state changes, before/after datum comparison, and pass/fail results.
