@@ -73,6 +73,16 @@ Files:
 - [`screenshots/datum_before_input.png`](./screenshots/datum_before_input.png)
 - [`screenshots/datum_after_output.png`](./screenshots/datum_after_output.png)
 
+## Aiken Test File
+
+Aiken rolling-loan test file:
+
+[`tests/rolling_loan_test.ak`](./tests/rolling_loan_test.ak)
+
+This file contains fixture-based Aiken unit tests for the rolling-loan/refinancing mechanism. It is provided as additional test-level evidence to make the internal validation scenarios easier to review.
+
+The PDF reports and Preprod transaction evidence use actual on-chain values, while the Aiken test file uses fixture values. Both refer to the same core mechanism: Create Loan + Repay Loan + collateral transfer in a single refinancing transaction.
+
 ## Demo Video
 
 https://www.youtube.com/watch?v=1eG3JKXwskM&t=9s
